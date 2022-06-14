@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_onboarding/constants.dart';
 import 'package:flutter_onboarding/ui/root_page.dart';
 
-import 'login_page.dart';
-
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
 
@@ -29,7 +27,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               onTap: () {
                 Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (_) => const RootPage()));
-              }, //to login screen. We will update later
+              }, //to home screen. We will update later
               child: const Text(
                 'Skip',
                 style: TextStyle(
