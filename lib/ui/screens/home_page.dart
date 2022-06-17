@@ -238,7 +238,11 @@ class _HomePageState extends State<HomePage> {
                 scrollDirection: Axis.vertical,
                 physics: const BouncingScrollPhysics(),
                 itemBuilder: (BuildContext context, int index) {
-                  return PlantWidget(index: index, plantList: _plantList);
+                  return GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, PageTransition(child: DetailPage(plantId: _plantList[index].plantId), type: PageTransitionType.bottomToTop));
+                      },
+                      child: PlantWidget(index: index, plantList: _plantList));
                 }),
           ),
         ],
