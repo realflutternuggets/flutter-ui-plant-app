@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_onboarding/constants.dart';
-import 'package:flutter_onboarding/widgets/profile_widget.dart';
+import 'package:flutter_onboarding/ui/screens/widgets/profile_widget.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
